@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Profile</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-xxx" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-ukc9i9tvl33e3+8f+vks0ADWEFH1H6eFQjSrnM/y7xPuGJO8LdjF2pRWZmUwEIQExHyeAjsckFmVEMydEwK9Yg==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: rgb(0, 0, 0); font-family: 'Roboto', sans-serif; overflow-x: hidden;">
+
+<p class="starting_para">Vineela Varshini Kunchala</p>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="navigateTo('about-me')"><i class="fas fa-user"></i></a>
+                </li>
+                <li class="nav-item ms-3">
+                    <a class="nav-link" href="#" onclick="navigateTo('education')"><i class="fas fa-graduation-cap"></i></a>
+                </li>
+                <li class="nav-item ms-3">
+                    <a class="nav-link" href="#" onclick="navigateTo('skills')"><i class="fas fa-laptop-code"></i></a>
+                </li>
+                <li class="nav-item ms-3">
+                  <a class="nav-link" href="#" onclick="navigateTo('certification')"><i class="fas fa-certificate"></i></a>
+              
+                </li>
+                <li class="nav-item ms-3">
+                    <a class="nav-link" href="#" onclick="navigateTo('contact')"><i class="fas fa-envelope"></i></a>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<script>
+        function navigateTo(sectionId) {
+          var section = document.getElementById(sectionId);
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
+</script>
+
+
+
+<section id="about-me" class="container mt-5">
+    <h1 class="text-center">About me</h1>
+    <p style="text-align: left;">I am a person who is dedicated and focused on my work. To become a successful coder, explore on all the emerging fields and work on them. To obtain a challenging position that fully utilizes my skills and provides me with suitable opportunities to grow my technical and communication skills.
+      Constantly striving to improve problem-solving skills by tackling complex challenges in coding and technology.Passionate about leveraging creativity and innovation to develop cutting-edge solutions and optimize existing systems. Engaging in ongoing learning through courses, certifications, and personal projects to stay ahead in the fast-paced world of technology.
+    </p>
+</section>
+
+
+<section id="education" class="container mt-5">
+    <h1 class="text-center text-light">Education</h1>
+    <div class="row flex-row">
+        <div class="col-md-6">
+            <div class="hover-element text-center" style="width: 250px;" data-details="72%, School: St Andrew's School, Hyderabad">10th</div>
+        </div>
+        <div class="col-md-6">
+            <div class="hover-element text-center" style="width: 250px;" data-details="94%, College: Narayana Junior College, Hyderabad">Intermediate</div>
+        </div>
+    </div>
+    <div class="row flex-row mt-3">
+        <div class="col-md-6">
+            <div class="hover-element text-center" style="width: 250px;" data-details="CGPA: 7.81, College: Hyderabad Institute of Technology and Management">Bachelor's of Technology</div>
+        </div>
+        <div class="col-md-6">
+            <div class="hover-element text-center" style="width: 250px;" data-details="College: International Institue of Information Technology, IIIT Hyderabad">Master's of Science</div>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="skills" class="container mt-5">
+    <h1 class="text-center text-light">Technical Skills</h1>
+    <div class="row">
+        <div class="col-md-2">
+            <div class="logo-name text-center">C</div>
+        </div>
+        <div class="col-md-2">
+            <div class="logo-name text-center">C++</div>
+        </div>
+        <div class="col-md-2">
+            <div class="logo-name text-center">HTML</div>
+        </div>
+        <div class="col-md-2">
+            <div class="logo-name text-center">CSS</div>
+        </div>
+        <div class="col-md-2">
+            <div class="logo-name text-center">JAVA</div>
+        </div>
+        <div class="col-md-2">
+            <div class="logo-name text-center">MYSQL</div>
+        </div>
+    </div>
+</section>
+<section id="certification" class="container mt-5">
+  
+
+  <h1 class="text-center text-light"><p style="color: rgb(71, 40, 0);">Certifications</p></h1>
+  <div class="row">
+      <div class="col-md-6">
+          <div class="hover-element text-center" style="width: 250px;" data-details="Python with data science">Python Certification</div>
+      </div>
+      <div class="col-md-6">
+          <div class="hover-element text-center" style="width: 250px;" data-details="Cloud Computing-NPTEL">Cloud Computing</div>
+      </div>
+  </div>
+  <div class="row flex-row mt-3">
+      <div class="col-md-6">
+          <div class="hover-element text-center" style="width: 250px;" data-details="Database Management System-NPTEL">Database Management System</div>
+      </div>
+      
+  </div>
+</section>
+
+<section id="contact" class="container mt-5">
+    <div class="centering">
+        <ul>
+            <li class="item">
+                <a href="https://github.com/VineelaVarshini" target="_blank">
+                    <i class="fa-brands fa-github icon"></i>
+                </a>
+            </li>
+            <li class="item">
+                <a href="https://www.linkedin.com/in/vineela-varshini-6900a926a/" target="_blank">
+                    <i class="fa-brands fa-linkedin icon"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <p style="color: rgb(211, 17, 56);">vineela.varshini@msitprogram.net</p>
+</section>
+
+</body>
+</html>
